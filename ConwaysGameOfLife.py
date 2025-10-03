@@ -1,4 +1,3 @@
-```
 # -*- coding: utf-8 -*-
 """
 Created on Mon Sep 29 10:13:29 2025
@@ -9,6 +8,7 @@ Created on Mon Sep 29 10:13:29 2025
 import time
 import os
 import numpy as np
+
 
 class ConwaysGame:
     def __init__(self):
@@ -72,7 +72,7 @@ class ConwaysGame:
                 if self.board[r, c] == 1 and (count < 2 or count > 3):
                     new_board[r, c] = 0
 
-                elif  
+                elif self.board[r, c] == 0 and count == 3:
                     new_board[r, c] = 1
         self.board = new_board
 
@@ -96,4 +96,3 @@ class ConwaysGame:
 
 
 ConwaysGame().execute()
-```
